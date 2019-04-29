@@ -100,7 +100,7 @@ export default {
     },
     addPerson: function(e) {
       e.preventDefault();
-      axios.post(`http://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/`, {
+      axios.post(`https://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/`, {
         ...this.form
       })
       .then(() => {

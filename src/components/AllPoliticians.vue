@@ -83,7 +83,7 @@ export default {
     },
 
     deletePerson: function(id) {
-      axios.delete(`http://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/${id}`)
+      axios.delete(`https://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/${id}`)
       .then(() => {
         this.getUsers();
       })
@@ -93,7 +93,7 @@ export default {
 
     },
     getUsers: function() {
-      axios.get('http://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine')
+      axios.get('https://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine')
       .then(res => {
           this.userData = res.data;
       })

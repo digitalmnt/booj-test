@@ -79,7 +79,7 @@ describe("AllPoliticians", () => {
 
   it("should display error message after politician is deleted.", async () => {
 
-    mock.onDelete(`http://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/13`).networkError();
+    mock.onDelete(`https://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/13`).networkError();
 
     const result = await wrapper.vm.deletePerson(13);
     expect(wrapper.find('.delete-error').exists()).toBeTruthy()

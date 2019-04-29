@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getUser: function() {
-      axios.get(`http://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/${this.id}`)
+      axios.get(`https://5cc1051982ec6a00149f3ffb.mockapi.io/booj/sunshine/${this.id}`)
       .then(res => {
           this.user = res.data;
       })
